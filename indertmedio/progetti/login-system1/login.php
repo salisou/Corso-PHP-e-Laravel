@@ -3,7 +3,7 @@ include 'header.php';
 ?>
 
 <body>
-    <div class="container">
+    <div class="form-container">
         <h1>Login System 1</h1>
 
 
@@ -40,7 +40,7 @@ include 'header.php';
                 echo "ACCESSO efettuato con successo: Benvenuti nel in Laravel";
                 echo "</div>";
             } else {
-                echo "<div class='messagio1'>";
+                echo "<div class='messagio2'>";
                 echo "⚠️Errora! Verifica le credenziali";
                 echo "</div>";
             }
