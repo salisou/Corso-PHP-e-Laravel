@@ -1,37 +1,136 @@
+/* =====================================================
+   RESET BASE
+===================================================== */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* =====================================================
+   BODY
+===================================================== */
 
 body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: rgb(194, 247, 255);
     font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f6f9;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+/* =====================================================
+   CONTAINER
+===================================================== */
 
 .container {
     width: 100%;
-    max-width: 400px;
-    background: #FFF;
+    max-width: 450px;
+    background-color: #ffffff;
     padding: 30px;
     border-radius: 15px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
 }
+
+/* =====================================================
+   TITOLO
+===================================================== */
 
 h1 {
     text-align: center;
     margin-bottom: 25px;
-    color: blue;
+    color: #333;
 }
+
+/* =====================================================
+   LABEL
+===================================================== */
 
 label {
     display: block;
     margin-bottom: 8px;
     font-weight: bold;
     color: #555;
+}
+
+/* =====================================================
+   INPUT
+===================================================== */
+
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 18px;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #0d6efd;
+}
+
+/* =====================================================
+   BOTTONE
+===================================================== */
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #0d6efd;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #0b5ed7;
+}
+
+/* =====================================================
+   MESSAGGI
+===================================================== */
+
+.success {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #d1e7dd;
+    color: #0f5132;
+    border-radius: 8px;
+    border: 1px solid #badbcc;
+}
+
+.error {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f8d7da;
+    color: #842029;
+    border-radius: 8px;
+    border: 1px solid #f5c2c7;
+}
+
+/* =====================================================
+   RUOLI
+===================================================== */
+
+.admin {
+    color: #dc3545;
+    font-weight: bold;
+}
+
+.studente {
+    color: #198754;
+    font-weight: bold;
+}
+
+.docente {
+    color: #0d6efd;
+    font-weight: bold;
 }
